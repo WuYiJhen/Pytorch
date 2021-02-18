@@ -5,3 +5,9 @@
 - Mullenbach, J., Wiegreffe, S., Duke, J., Sun, J., & Eisenstein, J. (2018). Explainable prediction of medical codes from clinical text. arXiv preprint arXiv:1802.05695.
 
 - Kim, Y. (2014). Convolutional neural networks for sentence classification. arXiv preprint arXiv:1408.5882.
+
+
+| Field                |  Type  | Description                               |
+| -------------------- | ------ | ----------------------------------------- |
+| mode                 | string | REQUIRED ; inference mode (single, batch) |
+| text                 | string/List | REQUIRED ; Input content (unit content). If `mode =  "single"`, text should be string; If `mode =  "batch"`, text should be list of string|
