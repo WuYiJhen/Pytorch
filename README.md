@@ -7,7 +7,8 @@
 - Kim, Y. (2014). Convolutional neural networks for sentence classification. arXiv preprint arXiv:1408.5882.
 
 
-| Field                |  Type  | Description                               |
-| -------------------- | ------ | ----------------------------------------- |
-| mode                 | string | REQUIRED ; inference mode (single, batch) |
-| text                 | string/List | REQUIRED ; Input content (unit content). If `mode =  "single"`, text should be string; If `mode =  "batch"`, text should be list of string|
+| Field        |  Type  | Description                               |
+| -------------| ------ | ----------------------------------------- |
+| mode         | str | REQUIRED ; inference mode ( "single", "batch" )  |
+| batch_size   | int | OPTIONAL ; If mode =  "batch", the model will inference with batch. Default batch size is 128|
+| text         | str/list | REQUIRED ; Input content (unit content). If mode =  "single", text should be string; If mode =  "batch", text should be list of string|
